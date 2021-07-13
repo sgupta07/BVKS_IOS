@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioView" customModule="Bhakti_Vikasa_Swami" customModuleProvider="target">
+            <connections>
+                <outlet property="btnPlay" destination="Am4-B2-Tas" id="WAA-3y-Esf"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="giU-kQ-GJL"/>
+                <outlet property="imgPlayerThumb" destination="A5t-zY-CpS" id="svT-aQ-qge"/>
+                <outlet property="lblPlayerTitle" destination="WSK-bI-MaY" id="UCv-yx-aVh"/>
+                <outlet property="lblplayerSubTitle" destination="aPK-lu-uhh" id="gou-e4-Ix9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----------------------------------------------------------------------------------------------------------------------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSK-bI-MaY" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                    <rect key="frame" x="132" y="24" width="243" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.58033961060000006" green="0.58042579890000001" blue="0.58032077550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---------------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPK-lu-uhh">
+                    <rect key="frame" x="132" y="52" width="243" height="16"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <color key="textColor" red="0.58033961060000006" green="0.58042579890000001" blue="0.58032077550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A5t-zY-CpS">
+                    <rect key="frame" x="10" y="18" width="112" height="84"/>
+                    <color key="backgroundColor" red="0.9392391443" green="0.42624685169999998" blue="0.21817651390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="A5t-zY-CpS" secondAttribute="height" multiplier="2:1.5" id="RLC-70-rOp"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am4-B2-Tas" userLabel="playPusae">
+                    <rect key="frame" x="385" y="42.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="9eo-dR-O0l"/>
+                        <constraint firstAttribute="width" constant="35" id="Teb-Qa-t0q"/>
+                    </constraints>
+                    <color key="tintColor" red="0.93942219019999995" green="0.46788769959999998" blue="0.241677165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="play"/>
+                    <connections>
+                        <action selector="playAndPause:" destination="-1" eventType="touchUpInside" id="bi5-q6-b1I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Am4-B2-Tas" firstAttribute="leading" secondItem="WSK-bI-MaY" secondAttribute="trailing" constant="10" id="5IQ-e9-C31"/>
+                <constraint firstItem="aPK-lu-uhh" firstAttribute="leading" secondItem="WSK-bI-MaY" secondAttribute="leading" id="9Jz-z5-OlS"/>
+                <constraint firstItem="WSK-bI-MaY" firstAttribute="leading" secondItem="A5t-zY-CpS" secondAttribute="trailing" constant="10" id="Dn6-xk-UTY"/>
+                <constraint firstItem="aPK-lu-uhh" firstAttribute="top" secondItem="WSK-bI-MaY" secondAttribute="bottom" constant="10" id="FAj-VH-niQ"/>
+                <constraint firstItem="Am4-B2-Tas" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Vuh-Yn-rZ5"/>
+                <constraint firstAttribute="trailing" secondItem="Am4-B2-Tas" secondAttribute="trailing" constant="10" id="ZEo-2M-OvW"/>
+                <constraint firstItem="aPK-lu-uhh" firstAttribute="trailing" secondItem="WSK-bI-MaY" secondAttribute="trailing" id="a5M-JV-5Gd"/>
+                <constraint firstItem="A5t-zY-CpS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="brR-pt-0DQ"/>
+                <constraint firstItem="aPK-lu-uhh" firstAttribute="centerY" secondItem="A5t-zY-CpS" secondAttribute="centerY" id="fa6-i6-HJI"/>
+                <constraint firstItem="A5t-zY-CpS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yKb-Wq-NdS"/>
+                <constraint firstItem="A5t-zY-CpS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="yPd-5e-wo6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="10" height="20"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" red="0.94280022379999995" green="0.47456103560000001" blue="0.22529420259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="152.17391304347828" y="-164.73214285714286"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="WSK-bI-MaY">
+            <size key="intrinsicContentSize" width="807.5" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="play" width="24" height="24"/>
+    </resources>
+</document>
