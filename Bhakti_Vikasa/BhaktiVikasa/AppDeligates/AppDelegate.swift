@@ -14,7 +14,7 @@ import FirebaseMessaging
 import SWRevealViewController
 import DropDown
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate {
 var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -58,7 +58,7 @@ extension AppDelegate{
         // Check for sign in error
         if let error = error {
             CommonFunc.shared.switchAppLoader(value: false)
-            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+            if (error as NSError).code == GIDSignInError.hasNoAuthInKeychain.rawValue{
                 print("The user has not signed in before or they have since signed out.")
             } else {
                 print("\(error.localizedDescription)")
@@ -67,11 +67,11 @@ extension AppDelegate{
         }
         
         // Get credential object using Google ID token and Google access token
-        guard let authentication = user.authentication else {
+        if user.authentication == nil {
             return
         }
-        
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+        let authentication = user.authentication
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken ?? "",
                                                        accessToken: authentication.accessToken)
         
         
@@ -88,6 +88,7 @@ extension AppDelegate{
 
             print("CURRENT LOGGIN USER EMAIL--->\(Auth.auth().currentUser?.email)")
         }
+
     }
     
     func applicationLoad(){
@@ -99,8 +100,9 @@ extension AppDelegate{
         DropDown.appearance().selectedTextColor = UIColor.white
         DropDown.appearance().setupCornerRadius(10)
         FirebaseApp.configure()
-        GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        //GIDSignIn.sharedInstance.clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance.restorePreviousSignIn()
+//        FRManager.shared.firebaseUserSignOut()
         FRManager.shared.setInitalView()
         CommonPlayerFunc.shared.setInitialPlayer()
     }

@@ -86,16 +86,26 @@ class LoginVC: UIViewController {
        }
     // MARK: - Navigation
 
-   
+    private lazy var configuration: GIDConfiguration = {
+        return GIDConfiguration(clientID: (FirebaseApp.app()?.options.clientID)!)
+    }()
+    
     @IBAction func signWithGoogle(){
-        GIDSignIn.sharedInstance()?.delegate = UIApplication.shared.delegate as! AppDelegate
-
-        GIDSignIn.sharedInstance()?.presentingViewController = self
-        GIDSignIn.sharedInstance().signIn()
+        //GIDSignIn.sharedInstance()?.delegate = UIApplication.shared.delegate as! AppDelegate
+        GIDSignIn.sharedInstance.signIn(with: configuration,
+                                        presenting: self) { user, error in
+          guard let user = user else {
+            print("Error! \(String(describing: error))")
+            return
+          }
+         // self.authViewModel.state = .signedIn(user)
+        }
+//        GIDSignIn.sharedInstance()?.presentingViewController = self
+//        GIDSignIn.sharedInstance.signIn()
         CommonFunc.shared.switchAppLoader(value: true)
     }
     @IBAction func appleLogin(sender: UIButton) {
-       
+        
         if #available(iOS 13, *) {
             FRAppleSignHandler.shared.startSignInWithAppleFlow()
         } else {

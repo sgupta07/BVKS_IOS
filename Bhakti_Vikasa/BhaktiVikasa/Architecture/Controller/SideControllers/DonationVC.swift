@@ -32,14 +32,14 @@ class DonationVC: UIViewController,UISearchResultsUpdating {
     private  var razorpay: RazorpayCheckout!
     private var search:String=""
     private  var searcTime : Timer? = nil
- 
-   
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            self.hideKeyboardWhenTappedAround()
+        self.hideKeyboardWhenTappedAround()
         initialSetup()
-       // razorpay = RazorpayCheckout.initWithKey("rzp_test_IjSKkxoWWZyC1b", andDelegate: self) //TEST KEY
+        // razorpay = RazorpayCheckout.initWithKey("rzp_test_IjSKkxoWWZyC1b", andDelegate: self) //TEST KEY
         razorpay = RazorpayCheckout.initWithKey("rzp_live_9vXnIK1pCzdgN3", andDelegate: self) //LIVE KEY
         addSearch()
         
@@ -87,7 +87,7 @@ class DonationVC: UIViewController,UISearchResultsUpdating {
     }
     
     func initialSetup(){
-      //  txtName.text = GlobleVAR.appUser.name
+        //  txtName.text = GlobleVAR.appUser.name
         txtEmail.text = GlobleVAR.appUser.email
         txtDonateFor.delegate = self
         txtCurrency.delegate = self
@@ -95,7 +95,7 @@ class DonationVC: UIViewController,UISearchResultsUpdating {
     }
     
     func setupCountryTextField(textfield: UITextField){
-       
+        
         let countrie = JKCountry(countryCode: "IN", countryName: "India", dialCode: "+91")
         //Bundle.decode([JKCountry].self, forResource: "CountryCodes", extension: "json").randomElement()
         countryCodeBtn = UIButton(type: .custom)
@@ -103,16 +103,16 @@ class DonationVC: UIViewController,UISearchResultsUpdating {
         self.countryCodeBtn.setTitle("    \(countrie.flag ?? "") \(countrie.dialCode ?? "")    ", for: .normal)
         
         countryCodeBtn.addTarget(self, action: #selector(self.refresh(_:)), for: .touchUpInside)
-     //   countryCodeBtn.frame = CGRect(origin: self.txtPhoneNumber.frame.origin, size: CGSize(width: 100, height: 40))
+        //   countryCodeBtn.frame = CGRect(origin: self.txtPhoneNumber.frame.origin, size: CGSize(width: 100, height: 40))
         countryCodeBtn.frame = CGRect(origin: CGPoint(x: 0, y: 0) , size: CGSize(width: 100.0, height:30.0))
         let leftView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0) , size: CGSize(width: 100.0, height:30.0)))
         
         leftView.addSubview(countryCodeBtn)
-       // self.view.bringSubviewToFront(countryCodeBtn)
-      
+        // self.view.bringSubviewToFront(countryCodeBtn)
+        
         textfield.leftView = leftView//countryCodeBtn
         textfield.leftViewMode = .always
-       //   textfield.leftView?.sizeToFit()
+        //   textfield.leftView?.sizeToFit()
     }
     
     @objc func refresh(_ sender: UITextField){
@@ -147,7 +147,7 @@ class DonationVC: UIViewController,UISearchResultsUpdating {
         self.present(navVC, animated: true, completion: nil)
     }
     
-
+    
 }
 import Alamofire
 extension DonationVC:RazorpayPaymentCompletionProtocol{
@@ -157,7 +157,7 @@ extension DonationVC:RazorpayPaymentCompletionProtocol{
         
         let receipt = String.random()+"_#\(self.txtDonateFor.text ?? "")"
         let orderId_Params = ["amount":ammount*100,"currency":currency_code,"receipt":receipt] as [String : Any]
-       // let headers_Params = ["Authorization":"Basic cnpwX3Rlc3RfSWpTS2t4b1dXWnlDMWI6dkR5Ukk4NFl4V3ptNk5pOEhYZDJYd3g5"] //RAZOR_PAY TEST KEY
+        // let headers_Params = ["Authorization":"Basic cnpwX3Rlc3RfSWpTS2t4b1dXWnlDMWI6dkR5Ukk4NFl4V3ptNk5pOEhYZDJYd3g5"] //RAZOR_PAY TEST KEY
         let headers_Params = ["Authorization":"Basic cnpwX2xpdmVfOXZYbklLMXBDemRnTjM6RTZLTGxkckhpWkUxaXlWcldXU1NTZ1pU"] //RAZOR_PAY LIVE KEY
         CommonFunc.shared.switchAppLoader(value: true)
         let headers = HTTPHeaders(headers_Params)

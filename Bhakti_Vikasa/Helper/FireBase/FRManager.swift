@@ -55,7 +55,7 @@ private func isUserLoggedIn() -> Bool {
      func firebaseUserSignOut(){
         do {
           try Auth.auth().signOut()
-            GIDSignIn.sharedInstance()?.signOut()
+            GIDSignIn.sharedInstance.signOut()
         } catch {
           print("Sign out error")
         }
@@ -281,7 +281,7 @@ extension FRManager{
 
 extension FRManager{
     func googleSignOut(){
-        GIDSignIn.sharedInstance()?.signOut()
+        GIDSignIn.sharedInstance.signOut()//.sharedInstance?.signOut()
         
         // Sign out from Firebase
         do {

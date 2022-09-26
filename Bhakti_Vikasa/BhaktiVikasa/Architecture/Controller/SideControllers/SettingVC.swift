@@ -55,7 +55,7 @@ class SettingVC: UIViewController {
         ntfSet.bengali = true
         settinges.notification = ntfSet
         Settinges.updateUserSettings(setting: settinges)
-       // FRManager.shared.subscribeAll(isSubscribe: true)
+        // FRManager.shared.subscribeAll(isSubscribe: true)
         self.userSettinges = settinges
         self.tblSettinges.reloadData()
         //CommonFunc.shared.switchAppLoader(value: true)
@@ -72,13 +72,13 @@ class SettingVC: UIViewController {
             switch sender.tag {
             case 0:
                 noti.english = sender.isOn
-               // self.userSettinges?.notification?.english = sender.isOn
+                // self.userSettinges?.notification?.english = sender.isOn
             case 1:
                 noti.hindi = sender.isOn
-               // self.userSettinges?.notification?.hindi = sender.isOn
+                // self.userSettinges?.notification?.hindi = sender.isOn
             case 2:
                 noti.bengali = sender.isOn
-               // self.userSettinges?.notification?.bengali = sender.isOn
+                // self.userSettinges?.notification?.bengali = sender.isOn
             default:
                 return
             }

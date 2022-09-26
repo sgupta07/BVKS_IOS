@@ -251,9 +251,7 @@ extension HomeLecturesVC:FilterApplyProtocoal,lectureSearchProtocol{
         let searchstr = navView.txtSearch.text
         let isVideo =  navView.switchVideo.isOn
         oprationalDB = Lecture.getProccessedLecters(with: GlobleDB.rawGloble, searchStr: searchstr, isVideos: isVideo, sortBy: self.selectedSortType, filterPoints: self.selectedFilters)
-    }
-    
-   
+    }   
 }
 
 

@@ -14,8 +14,8 @@ struct LectureInfo:Codable {
     var id: Int?
     var creationTimestamp: Int?
     var lastModifiedTimestamp: Int?
-    var totallength: Int?
-    var lastPlayedPoint: Int?
+    var totallength: Float?
+    var lastPlayedPoint: Float?
     var totalPlayedNo: Int?
     var totalplayedTime: Int?
     var downloadPlace: Int?
@@ -161,6 +161,9 @@ extension LectureInfo{
                     print("+++NILLLLLL+")
                     continue
                 }
+                
+                print(LectureInfo.self)
+                
                 let model = try! FirestoreDecoder().decode(LectureInfo.self, from: data.document.data())
                 switch data.type {
                 case .added,.modified:

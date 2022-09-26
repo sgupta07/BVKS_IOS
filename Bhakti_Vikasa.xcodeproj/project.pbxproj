@@ -15,7 +15,6 @@
 		02EE6B1925F7E10300415F49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EE6B1825F7E10300415F49 /* GoogleService-Info.plist */; };
 		02F062D825E55A250000F28E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F062D725E55A250000F28E /* SearchVC.swift */; };
 		0482CFDC250AB7FD009D24AA /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482CFDB250AB7FD009D24AA /* WebViewVC.swift */; };
-		12B8E8D9A509F5CBF6956E1D /* Pods_Bhakti_Vikasa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CABFED5C6F8BD80626597A0 /* Pods_Bhakti_Vikasa.framework */; };
 		1C24286325C0C7D8004425DD /* blueLoader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1C24286225C0C7D8004425DD /* blueLoader.gif */; };
 		1C28568525B9DA530022001C /* UISlider+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28568425B9DA530022001C /* UISlider+Ex.swift */; };
 		1C28568725B9DF780022001C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28568625B9DF780022001C /* UIImage+Extension.swift */; };
@@ -35,6 +34,7 @@
 		1CA9BA1625B240CE006EDEBC /* UINavigation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9BA1525B240CE006EDEBC /* UINavigation+Extension.swift */; };
 		1CC4173625B7377A00C586E1 /* DKDropdownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4173525B7377A00C586E1 /* DKDropdownController.swift */; };
 		1CC4173825B73D8F00C586E1 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4173725B73D8F00C586E1 /* UITableView+Ex.swift */; };
+		4771D731D3774780B998DD70 /* Pods_Bhakti_Vikasa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2587F7BC5F4BF7CA7C040090 /* Pods_Bhakti_Vikasa.framework */; };
 		9107FB732587CCB4004AC283 /* SelectedPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9107FB722587CCB4004AC283 /* SelectedPlaylistVC.swift */; };
 		9108CB98255C995D00175211 /* Stagin_GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9108CB97255C995D00175211 /* Stagin_GoogleService-Info.plist */; };
 		910FDC53250A93B9003C9C4D /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910FDC52250A93B9003C9C4D /* PlayerVC.swift */; };
@@ -137,9 +137,8 @@
 		1CC214AF25A3D9F300A0E437 /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC4173525B7377A00C586E1 /* DKDropdownController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKDropdownController.swift; sourceTree = "<group>"; };
 		1CC4173725B73D8F00C586E1 /* UITableView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
-		2CABFED5C6F8BD80626597A0 /* Pods_Bhakti_Vikasa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bhakti_Vikasa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A03C6BB568FA6DCCF761EAB /* Pods-Bhakti_Vikasa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bhakti_Vikasa.debug.xcconfig"; path = "Target Support Files/Pods-Bhakti_Vikasa/Pods-Bhakti_Vikasa.debug.xcconfig"; sourceTree = "<group>"; };
-		7B6525917A369EB1935CA873 /* Pods-Bhakti_Vikasa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bhakti_Vikasa.release.xcconfig"; path = "Target Support Files/Pods-Bhakti_Vikasa/Pods-Bhakti_Vikasa.release.xcconfig"; sourceTree = "<group>"; };
+		2587F7BC5F4BF7CA7C040090 /* Pods_Bhakti_Vikasa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bhakti_Vikasa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		705F343ABEDFB6A9E1A77716 /* Pods-Bhakti_Vikasa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bhakti_Vikasa.debug.xcconfig"; path = "Target Support Files/Pods-Bhakti_Vikasa/Pods-Bhakti_Vikasa.debug.xcconfig"; sourceTree = "<group>"; };
 		9107FB722587CCB4004AC283 /* SelectedPlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPlaylistVC.swift; sourceTree = "<group>"; };
 		9108CB97255C995D00175211 /* Stagin_GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Stagin_GoogleService-Info.plist"; sourceTree = "<group>"; };
 		910FDC52250A93B9003C9C4D /* PlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
@@ -214,6 +213,7 @@
 		91F57AF3251386210061E238 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		91F8AD5125924D6B005A11DC /* DonationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationVC.swift; sourceTree = "<group>"; };
 		91FAACDE2587F4A8009FEA63 /* appEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appEnums.swift; sourceTree = "<group>"; };
+		E751B24BB9096FAE38D996E3 /* Pods-Bhakti_Vikasa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bhakti_Vikasa.release.xcconfig"; path = "Target Support Files/Pods-Bhakti_Vikasa/Pods-Bhakti_Vikasa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B8E8D9A509F5CBF6956E1D /* Pods_Bhakti_Vikasa.framework in Frameworks */,
+				4771D731D3774780B998DD70 /* Pods_Bhakti_Vikasa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +300,8 @@
 		336CAC191B41DE137DB1F570 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5A03C6BB568FA6DCCF761EAB /* Pods-Bhakti_Vikasa.debug.xcconfig */,
-				7B6525917A369EB1935CA873 /* Pods-Bhakti_Vikasa.release.xcconfig */,
+				705F343ABEDFB6A9E1A77716 /* Pods-Bhakti_Vikasa.debug.xcconfig */,
+				E751B24BB9096FAE38D996E3 /* Pods-Bhakti_Vikasa.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -687,7 +687,7 @@
 			children = (
 				1CC214AF25A3D9F300A0E437 /* SwiftGifOrigin.framework */,
 				91B7E977251767B3001BB24A /* CryptoTokenKit.framework */,
-				2CABFED5C6F8BD80626597A0 /* Pods_Bhakti_Vikasa.framework */,
+				2587F7BC5F4BF7CA7C040090 /* Pods_Bhakti_Vikasa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -699,13 +699,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91A3C12F25080FC1006A3D5F /* Build configuration list for PBXNativeTarget "Bhakti_Vikasa" */;
 			buildPhases = (
-				B5883A748B335186F9FF59C9 /* [CP] Check Pods Manifest.lock */,
+				1A75DEFB761EC22BF1C61C4D /* [CP] Check Pods Manifest.lock */,
 				91A3C11725080FBE006A3D5F /* Sources */,
 				91A3C11825080FBE006A3D5F /* Frameworks */,
 				91A3C11925080FBE006A3D5F /* Resources */,
 				91C4ED69255AEE3000EFB0D7 /* ShellScript */,
-				71F9C63361755B13F544C2D5 /* [CP] Embed Pods Frameworks */,
-				33FC248FABC96A58C972E859 /* [CP] Copy Pods Resources */,
+				1DBD3335E07343F105653E1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -777,24 +776,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		33FC248FABC96A58C972E859 /* [CP] Copy Pods Resources */ = {
+		1A75DEFB761EC22BF1C61C4D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bhakti_Vikasa/Pods-Bhakti_Vikasa-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bhakti_Vikasa/Pods-Bhakti_Vikasa-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bhakti_Vikasa-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bhakti_Vikasa/Pods-Bhakti_Vikasa-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71F9C63361755B13F544C2D5 /* [CP] Embed Pods Frameworks */ = {
+		1DBD3335E07343F105653E1D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -828,28 +832,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
-		};
-		B5883A748B335186F9FF59C9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bhakti_Vikasa-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1084,14 +1066,14 @@
 		};
 		91A3C13025080FC1006A3D5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A03C6BB568FA6DCCF761EAB /* Pods-Bhakti_Vikasa.debug.xcconfig */;
+			baseConfigurationReference = 705F343ABEDFB6A9E1A77716 /* Pods-Bhakti_Vikasa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_ENTITLEMENTS = Bhakti_Vikasa/Bhakti_Vikasa.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = S92372RU6B;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
@@ -1150,7 +1132,7 @@
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1270,14 +1252,14 @@
 		};
 		91A3C13125080FC1006A3D5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B6525917A369EB1935CA873 /* Pods-Bhakti_Vikasa.release.xcconfig */;
+			baseConfigurationReference = E751B24BB9096FAE38D996E3 /* Pods-Bhakti_Vikasa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_ENTITLEMENTS = Bhakti_Vikasa/Bhakti_VikasaRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.7;
 				DEVELOPMENT_TEAM = S92372RU6B;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = NO;
@@ -1335,7 +1317,7 @@
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",

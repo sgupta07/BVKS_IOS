@@ -67,12 +67,12 @@ struct GlobleVAR{
 
 
     static func resetAllPreSets(){
+        currentPlay = nil
         appUser = User()
         searchfilterDeligate = nil
         filterDeligate = nil
         selectedTab = .topLacture
         filterModel = []
-        currentPlay = nil
         currentIndex = 0
         isSortActive = false
         isFirstPlay = true

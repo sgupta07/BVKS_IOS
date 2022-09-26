@@ -155,9 +155,9 @@ extension SideMenuVC:UITableViewDelegate,UITableViewDataSource{
         }else if Index == 4{
             Toast(text: "Temporarily disabled due to recent RBI mandate.", delay: 0.0, duration: 5.0).show()
             revealViewController()?.revealToggle(animated: true)
-//            revealViewController()?.revealToggle(animated: true)
-//            let vc = AppStorybords.home.instantiateViewController(withIdentifier: "PaymentVC")as! DonationVC
-//            UIApplication.getTopViewController()?.show(vc, sender: nil)
+            //            revealViewController()?.revealToggle(animated: true)
+            //            let vc = AppStorybords.home.instantiateViewController(withIdentifier: "PaymentVC")as! DonationVC
+            //            UIApplication.getTopViewController()?.show(vc, sender: nil)
         }else if Index == 5{
             revealViewController()?.revealToggle(animated: true)
             let vc = AppStorybords.home.instantiateViewController(withIdentifier: "SettingVC")as! SettingVC

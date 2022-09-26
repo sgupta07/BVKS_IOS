@@ -12,6 +12,8 @@ import FirebaseMessaging
 import UIKit
 import UserNotifications
 
+var deviceTokenForApp:String?
+
 class PushNotificationManager: NSObject {
     let application: UIApplication
     let gcmMessageIDKey = "gcm.message_id"

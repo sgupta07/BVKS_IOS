@@ -178,13 +178,13 @@ class CommonPlayerFunc : NSObject{
                 guard !(info.isCompleted ?? false)  else {return}
                 currentInfo = info
                 currentInfo.lastModifiedTimestamp = c_Time
-                currentInfo.lastPlayedPoint = Int(self.currentTime)
-                currentInfo.totallength = Int(self.audioLength)
+                currentInfo.lastPlayedPoint = Float(self.currentTime)
+                currentInfo.totallength = Float(self.audioLength)
                 LectureInfo.setLectureInfo(with: currentInfo, isNew: false)
             }else{
                 currentInfo.id = GlobleVAR.currentPlay?.id
-                currentInfo.totallength = Int(self.audioLength)
-                currentInfo.lastPlayedPoint = Int(self.currentTime)
+                currentInfo.totallength = Float(self.audioLength)
+                currentInfo.lastPlayedPoint = Float(self.currentTime)
                 LectureInfo.setLectureInfo(with: currentInfo, isNew: true)
             }
         }

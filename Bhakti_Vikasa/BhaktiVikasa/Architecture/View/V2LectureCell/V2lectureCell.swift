@@ -130,12 +130,12 @@ class V2lectureCell: UITableViewCell {
                 listenProgress.isHidden = false
                 if let lastPoint = info?.lastPlayedPoint, let finalPoint = self.lecture?.info?.totallength, lastPoint > 0 , finalPoint > 0
                 {
-                    let fileProgreass = CGFloat((lastPoint*100)/finalPoint)
+                    let fileProgreass = (lastPoint*100)/finalPoint
                     print(">>>",fileProgreass)
                     
                     print("last",lastPoint)
                     print("finalPoint",finalPoint)
-                    self.listenProgress.value  = fileProgreass
+                    self.listenProgress.value  = CGFloat(fileProgreass)
                     
                 }else{
                     self.listenProgress.value = 0.0

@@ -16,6 +16,9 @@ target 'Bhakti_Vikasa' do
 	pod 'Bolts'
 	pod 'FBSDKCoreKit'
 	pod 'FBSDKLoginKit'
+  pod ‘FacebookCore’
+  pod ‘FacebookLogin’
+  pod ‘Firebase/Core’
  	pod 'MarqueeLabel'
  	pod 'CodableFirebase'
  	pod 'Firebase/Database'
